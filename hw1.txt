@@ -6,4 +6,8 @@ https://www.w3resource.com/java-exercises/array/index.php
 
 19 (אפשר להשתמש בפתרון שיש שם ולהבין אותו!)
 
+http://www.beginwithjava.com/java/methods/questions.html --> 5 exercises.
+
+
+
 מי שלא עשה שיעורי בית קודמים עד עכשיו נא לעשות
