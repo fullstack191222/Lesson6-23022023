@@ -1,0 +1,127 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    /*  *//*  int a = 10;
+        int b = 12;
+        System.out.println(a + b);*//*
+        printSum(10, 12);
+     *//*   int c = 20;
+        int d = 5;
+        System.out.println(c+d);*//*
+        printSum(20, 5);
+     *//*   int e = 100;
+        int f =100;
+        System.out.println(e + f);*//*
+        printSum(100,100);*/
+
+       // System.out.println("hello world");
+      //  printHelloWorld();
+
+       /* String hello = "helloWorld";
+        String arya = "arya";
+        print(hello);
+        print(arya);
+        print("just some text");
+        String word= "word";
+        printHelloWorld();*/
+        //printAgeAndName(25, "John Snow");
+
+        //exercise get from user age and name
+        //create method which gets two parameters int age and string name and prints them.
+       /* Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter the age");
+        int age2 = scanner.nextInt();
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("please enter your name");
+        String name = scanner1.nextLine();
+        printAgeAndName(age2,name);
+        */
+
+       /* int sum = sumTwoInts(20, 10);
+        System.out.println(sum);*/
+//        sumAndPrint(45, 50);
+
+
+     /*   double average = calculateAverage(5,10,15);
+        double average2 = calculateAverage(50,10,15);
+        System.out.println(average);
+        System.out.println(average2);*/
+
+       /* //exercise create method which gets 3 number and returns the minimal.
+        int min = getMinimalNumber(5,10,1); //--->1
+        System.out.println(min);//prints 1
+        System.out.println(getMinimalNumber(-2, 5, 0));//-2
+*/
+
+        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        int[][] matrix2 = {{1,2,3},{4,5,6},{7,8,9}, {-3,-50}};
+
+
+        int matrixSum = calculateMatrixSum(matrix);
+        int matrixSum2 = calculateMatrixSum(matrix2);
+        System.out.println(matrixSum);
+        System.out.println(matrixSum2);
+
+    }//main END here
+
+
+    static int calculateMatrixSum(int[][] matrix) {
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                sum += matrix[i][j];
+            }
+        }
+        return sum;
+    }
+
+
+    static int getMinimalNumber(int a, int b, int c) {
+        int abSmallest = Math.min(a,b);//smallest between a and b
+        int theSmallest = Math.min(c, abSmallest); //now theSmallest is the minimum
+        return theSmallest;
+    }
+
+    //need to create method which returns average of three numbers
+    static double calculateAverage(int a, int b, int c) {
+        return  (a+b+c)/3 ;
+    }
+
+    static void sumAndPrint(int a, int b) {
+        int sum = sumTwoInts(a,b);
+        print(""+sum);
+    }
+
+    //method which gets two ints sums them and return the result
+    static int sumTwoInts(int a, int b) {
+        return a+b;
+    }
+
+    static int subtractTwoInts(int c, int d) {
+        return c-d;
+    }
+
+
+    //method gets age and name and prints them
+    static void printAgeAndName(int age, String name) {
+        System.out.println("my name is " + name + " and my age is " + age);
+    }
+
+    static void print(String word) { //word = "helloWorld"
+        System.out.println(word);
+    }
+
+    static void printHelloWorld() {
+        System.out.println("hello world");
+    }
+
+
+    static void printSum(int x, int y) {
+        System.out.println(x + y);
+    }
+
+
+
+
+}
